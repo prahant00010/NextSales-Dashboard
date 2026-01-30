@@ -31,25 +31,25 @@ Component-based structure for scalability
 
 Ready for API integration and feature expansion
 
-Project Structure
-sales-dashboard/
-├── app/
-│   ├── dashboard/
-│   │   └── page.tsx
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── charts/
-│   │   ├── SalesBarChart.tsx
-│   │   ├── SalesLineChart.tsx
-│   │   └── SalesPieChart.tsx
-│   ├── ui/
-│   └── DashboardHeader.tsx
-├── data/
-│   └── salesData.ts
-├── styles/
-├── public/
-└── README.md
+    Project Structure
+    sales-dashboard/
+     ├── app/
+     │   ├── dashboard/
+     │   │   └── page.tsx
+     │   ├── layout.tsx
+     │   └── page.tsx
+     ├── components/
+    │   ├── charts/
+    │   │   ├── SalesBarChart.tsx
+    │   │   ├── SalesLineChart.tsx
+    │   │   └── SalesPieChart.tsx
+    │   ├── ui/
+    │   └── DashboardHeader.tsx
+    ├── data/
+    │   └── salesData.ts
+    ├── styles/
+    ├── public/
+    └── README.md
 
 Setup Instructions
 Prerequisites
