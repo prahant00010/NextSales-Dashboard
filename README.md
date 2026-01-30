@@ -32,7 +32,8 @@ Features
 
     6.Ready for API integration and feature expansion
 
-    Project Structure
+Project Structure
+
      sales-dashboard/
      ├── app/
      │   ├── dashboard/
