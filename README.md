@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+NextSales-Dashboard
+Overview
 
-## Getting Started
+NextSales-Dashboard is a modern sales analytics dashboard built using Next.js 15, TypeScript, and Tailwind CSS. The project follows a clean, component-driven architecture and demonstrates how to visualize yearly sales data using charts within a scalable dashboard layout.
 
-First, run the development server:
+The application focuses on frontend best practices such as reusable components, clean UI composition, and data visualization. It uses mock sales data for different years and is structured in a way that allows easy future integration with real APIs.
 
-```bash
+Tech Stack
+
+Next.js 15 – App Router based architecture
+
+TypeScript – Strict type safety
+
+Tailwind CSS – Utility-first responsive styling
+
+Chart Library – Used for rendering sales charts
+
+React Components – Modular and reusable UI
+
+Features
+
+Dashboard layout with dedicated dashboard page
+
+Sales visualization for multiple years (2022, 2023, 2024)
+
+Chart-based representation of sales data
+
+Clean and responsive UI using Tailwind CSS
+
+Component-based structure for scalability
+
+Ready for API integration and feature expansion
+
+Project Structure
+sales-dashboard/
+├── app/
+│   ├── dashboard/
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── charts/
+│   │   ├── SalesBarChart.tsx
+│   │   ├── SalesLineChart.tsx
+│   │   └── SalesPieChart.tsx
+│   ├── ui/
+│   └── DashboardHeader.tsx
+├── data/
+│   └── salesData.ts
+├── styles/
+├── public/
+└── README.md
+
+Setup Instructions
+Prerequisites
+
+Node.js (v18 or higher)
+
+Git
+
+Installation
+
+Clone the repository
+
+git clone https://github.com/prahant00010/NextSales-Dashboard.git
+cd NextSales-Dashboard
+
+
+Install dependencies
+
+npm install
+
+
+Run the development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open in browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+Sales Data
 
-To learn more about Next.js, take a look at the following resources:
+The application uses mock sales data for demonstration purposes.
+Each year contains randomly generated sales figures inspired by real-world datasets (e.g., Kaggle).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Example:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+{
+  year: 2024,
+  sales: 850000
+}
 
-## Deploy on Vercel
+Enhancements (Future Scope)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Custom sales threshold filter input
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+API-based real-time sales data
+
+Toggle between bar, line, and pie charts
+
+Improved dashboard analytics
+
+Authentication and role-based access
+
+Purpose of the Project
+
+This project was built to demonstrate:
+
+Strong understanding of modern React and Next.js
+
+Clean component architecture
+
+Tailwind CSS styling best practices
+
+Data visualization in frontend applications
+
+Readiness for real-world dashboard development
+
+Author
+
+Prashant Mishra
+Frontend Developer
+GitHub: https://github.com/prahant00010
