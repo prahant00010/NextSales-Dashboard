@@ -2,9 +2,9 @@ NextSales-Dashboard
 
 Overview
 
-    NextSales-Dashboard is a modern sales analytics dashboard built using Next.js 15, TypeScript, and Tailwind CSS. The project follows a clean, component-driven architecture and demonstrates how to visualize        yearly sales data using charts within a scalable dashboard layout.
+    NextSales-Dashboard is a modern sales analytics dashboard built using Next.js 15, TypeScript, and Tailwind CSS. The project follows a clean, component-driven architecture and demonstrates how to visualize yearly sales data using charts within a scalable dashboard layout.
 
-     The application focuses on frontend best practices such as reusable components, clean UI composition, and data visualization. It uses mock sales data for different years and is structured in a way that           allows easy future integration with real APIs.
+The application focuses on frontend best practices such as reusable components, clean UI composition, and data visualization. It uses mock sales data for different years and is structured in a way that           allows easy future integration with real APIs.
 
 Tech Stack
 
