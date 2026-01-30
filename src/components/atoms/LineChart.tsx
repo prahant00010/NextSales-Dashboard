@@ -1,0 +1,56 @@
+'use client';
+
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { ChartData } from '@/types/sales';
+
+interface LineChartProps {
+  data: ChartData[];
+  title?: string;
+  color?: string;
+}
+
+export const SalesLineChart = ({
+  data,
+  title = 'Sales Trend',
+  color = '#10B981'
+}: LineChartProps) => {
+  return (
+    <div className="w-full h-96">
+      <h3 className="text-lg font-semibold text-gray-900 mb-4">{title}</h3>
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            dataKey="name"
+            fontSize={12}
+            tickLine={false}
+            axisLine={false}
+          />
+          <YAxis
+            fontSize={12}
+            tickLine={false}
+            axisLine={false}
+            tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+          />
+          <Tooltip
+            formatter={(value: number) => [`$${value.toLocaleString()}`, 'Sales']}
+            labelStyle={{ color: '#374151' }}
+            contentStyle={{
+              backgroundColor: '#F9FAFB',
+              border: '1px solid #D1D5DB',
+              borderRadius: '6px',
+            }}
+          />
+          <Line
+            type="monotone"
+            dataKey="value"
+            stroke={color}
+            strokeWidth={3}
+            dot={{ fill: color, strokeWidth: 2, r: 4 }}
+            activeDot={{ r: 6, stroke: color, strokeWidth: 2, fill: '#FFF' }}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
+  );
+};
